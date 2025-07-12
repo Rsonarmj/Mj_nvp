@@ -1,0 +1,9 @@
+
+{
+  "name": "mj-jewels-site",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {}
+}

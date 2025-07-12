@@ -1,1 +1,5 @@
-console.log("महालक्ष्मी ज्वेल वेबसाइट मोबाइल से चल रही है!");
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert("Thank you for your message! Our automated system will respond shortly.");
+});
