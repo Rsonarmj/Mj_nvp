@@ -1,17 +1,7 @@
 
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f9f9f9;
-}
-header {
-  background-color: #ffe082;
-  padding: 20px;
-  border-radius: 10px;
-}
-section {
-  margin-top: 30px;
-  padding: 15px;
-  background-color: #fff8e1;
-  border-radius: 10px;
-}
+body { font-family: sans-serif; padding: 20px; background: #fffbea; }
+h1 { text-align: center; color: #d17c28; }
+form { max-width: 400px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; }
+input, select, button { display: block; width: 100%; margin: 10px 0; padding: 10px; }
+#gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-top: 20px; }
+.media-item img, .media-item video { width: 100%; border-radius: 5px; }

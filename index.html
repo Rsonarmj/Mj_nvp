@@ -1,34 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mahalakshmi Jewels - Secure</title>
+  <title>MJ Business Gallery</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="admin-lock.js" defer></script>
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header>
-    <h1 id="companyName"></h1>
-    <p>Email: <span id="emailID"></span></p>
-    <p>Phone: <span id="phoneNumber"></span></p>
-  </header>
-
-  <section>
-    <h2>Request Edit (CEO Approval Required)</h2>
-    <form id="editRequestForm">
-      <label>Field to Edit:</label>
-      <select name="field" required>
-        <option value="companyName">Company Name</option>
-        <option value="emailID">Email ID</option>
-        <option value="phoneNumber">Phone Number</option>
-      </select>
-      <input type="text" name="newValue" placeholder="New Value" required />
-      <input type="password" name="adminPass" placeholder="Admin Password" required />
-      <button type="submit">Submit Edit</button>
+  <h1>MJ Business Gallery</h1>
+  <form id="userForm">
+    <input type="text" id="userName" placeholder="नाम" required />
+    <input type="email" id="userEmail" placeholder="ईमेल" required />
+    <input type="tel" id="userPhone" placeholder="मोबाइल नंबर" required />
+    <select id="userType" required>
+      <option value="">आपका व्यवसाय</option>
+      <option value="कारिगर">कारिगर</option>
+      <option value="व्यापारी">व्यापारी</option>
+      <option value="थोक विक्रेता">थोक विक्रेता</option>
+      <option value="निर्माता">निर्माता</option>
+    </select>
+    <button type="submit">जमा करें</button>
+  </form>
+  <div id="uploadSection" style="display:none;">
+    <form id="uploadForm">
+      <input type="file" id="mediaUpload" multiple accept="image/*,video/*" />
+      <button type="submit">Upload</button>
     </form>
-    <p id="editStatus"></p>
-  </section>
+    <section id="gallery"></section>
+  </div>
 </body>
 </html>
