@@ -1,16 +1,18 @@
 
-# Mahalakshmi Jewels Website
+# MJ Gallery Upload System (Local & Free Version)
 
-This is a free static jewelry business website designed for zero-cost hosting via GitHub Pages.
+Features:
+- Upload and preview images/videos
+- Supports real-time media viewing
+- Filtered for image/* and video/* MIME types
+- Extendable to Firebase Storage or Google Drive
 
-## Features:
-- Home Page with Logo
-- Gallery Section
-- Contact Form with basic automation
-- WhatsApp Chat Bot link (auto-response only)
-- Mobile-friendly and fully responsive
+Limitations:
+- This version is browser-local (no actual server or backend storage)
+- Use Firebase/Drive for full upload + download system
 
-## Hosting Instructions:
-1. Upload all files to your GitHub repository.
-2. Enable GitHub Pages: Source = `main`, Folder = `/root`.
-3. Your site will be published at `https://yourusername.github.io/repo-name`
+Next Upgrade Suggestions:
+- Add Email-based login (Only Business users)
+- Auto-moderation with AI APIs
+- Legal Content Filter (future extension via cloud AI)
+

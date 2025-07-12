@@ -2,38 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahalakshmi Jewels</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>MJ Business Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="gallery.js"></script>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="MJ Logo" class="logo" />
-    <h1>Welcome to Mahalakshmi Jewels</h1>
-  </header>
+  <h1>MJ Digital Business Gallery</h1>
+  <form id="uploadForm">
+    <input type="file" id="mediaUpload" multiple accept="image/*,video/*" />
+    <button type="submit">Upload</button>
+  </form>
 
-  <section class="gallery">
-    <h2>Jewellery Gallery</h2>
-    <div class="images">
-      <img src="jewel1.jpg" alt="Gold Necklace" />
-      <img src="jewel2.jpg" alt="Diamond Ring" />
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Customer Support (Automated)</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <div id="whatsapp-bot">
-    <a href="https://wa.me/919999999999?text=Hello%20MJ%20Jewels" target="_blank">Chat with us on WhatsApp</a>
-  </div>
+  <section id="gallery"></section>
 </body>
 </html>
