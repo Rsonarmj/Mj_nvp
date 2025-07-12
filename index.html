@@ -2,19 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MJ Business Gallery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="gallery.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahalakshmi Jewels - Secure</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="admin-lock.js" defer></script>
 </head>
 <body>
-  <h1>MJ Digital Business Gallery</h1>
-  <form id="uploadForm">
-    <input type="file" id="mediaUpload" multiple accept="image/*,video/*" />
-    <button type="submit">Upload</button>
-  </form>
+  <header>
+    <h1 id="companyName"></h1>
+    <p>Email: <span id="emailID"></span></p>
+    <p>Phone: <span id="phoneNumber"></span></p>
+  </header>
 
-  <section id="gallery"></section>
+  <section>
+    <h2>Request Edit (CEO Approval Required)</h2>
+    <form id="editRequestForm">
+      <label>Field to Edit:</label>
+      <select name="field" required>
+        <option value="companyName">Company Name</option>
+        <option value="emailID">Email ID</option>
+        <option value="phoneNumber">Phone Number</option>
+      </select>
+      <input type="text" name="newValue" placeholder="New Value" required />
+      <input type="password" name="adminPass" placeholder="Admin Password" required />
+      <button type="submit">Submit Edit</button>
+    </form>
+    <p id="editStatus"></p>
+  </section>
 </body>
 </html>
